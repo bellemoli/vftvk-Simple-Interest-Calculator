@@ -1,16 +1,46 @@
+<!DOCTYPE html>
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Simple Interest Calculator</title>
+
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <div class="maindiv">
+            
+             <h1>Simple Interest Calculator</h1>
+             <form action="" id="mainform">
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+           Amount <input type="number"  id="principal">  <br/>
+            Interest Rate <input type="number"  id="rate" min="1" max="20" step="0.25" value="10.25" onchange="showRange"> 
+            <span id="rate_val">10.25%</span>  <br/>
+            No. of years <input type="number"  id="years">  
+    
+        <select name="years">
+            <option value="1">1</option>
+            <option value="1">2</option>
+            <option value="1">3</option>
+            <option value="1">4</option>
+            <option value="1">5</option>
+            <option value="1">6</option>
+            <option value="1">7</option>
+            <option value="1">8</option>
+            <option value="1">9</option>
+            <option value="1">10</option>
+        </select>  <br/>
 
-        <button onclick="compute()">Compute</button>
+
+        <button onclick="compute(); return false;">Compute Interest</button>
+    </form>
+        <span id="result" class="result">
+            If you deposit <mark><label id="depositmessage"></label></mark> </br>
+            at an interest rate of <mark><label id="interestmessage"></label></mark> </br>
+            you will receive an amount of <mark><label id="amountmessage"></label></mark>
+            in the year of <mark><label id="yearmessage"></label></mark>
+        </span>
+
+        <footer> &#169;This Calculator belongs to Gabi</footer>
+        </div>
     </body>
 </html>
