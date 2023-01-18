@@ -1,13 +1,25 @@
-body {background-color:black;font-family:arial;color:white}
+body {background-color:grey;font-family:arial;color:white}
 h1{color:grey;font-family:verdana}
 .maindiv{
-background-color: white;
+background-color: rgba(212, 239, 248, 0.856);
 color: black;
-width: 300px;
-padding: 20px;
+width: 500px;
+padding: 50px;
 border-radius: 25px;
+border-style: double;
+border-width: 10px;
 margin: auto;
 
+}
+button {
+    background-color: rgb(108, 145, 199);
+    border: 5px;
+    border-style: solid;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: small;
 }
 
 footer {
